@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="layout">Select Layout</label>
+  <select class="form-control"  id="layout" [(ngModel)]="selectedLayout" name="layout"  (ngModelChange)="selectlayout($event)">
+    <option *ngFor="let lout of layouts" [ngValue]="lout">{{lout}}</option>
+  </select>
+</div>
